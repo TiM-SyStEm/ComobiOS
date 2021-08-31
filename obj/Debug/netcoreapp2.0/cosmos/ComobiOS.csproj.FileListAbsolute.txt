@@ -1,0 +1,10 @@
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\bin\Debug\netcoreapp2.0\cosmos\ComobiOS.deps.json
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\bin\Debug\netcoreapp2.0\cosmos\ComobiOS.dll
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\bin\Debug\netcoreapp2.0\cosmos\ComobiOS.pdb
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.csproj.AssemblyReference.cache
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.AssemblyInfoInputs.cache
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.AssemblyInfo.cs
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.csproj.CoreCompileInputs.cache
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.dll
+C:\Users\79333\OneDrive\Рабочий стол\ComobiOS\obj\Debug\netcoreapp2.0\cosmos\ComobiOS.pdb
