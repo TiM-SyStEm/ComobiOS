@@ -1,0 +1,10 @@
+C:\Softs\ComobiOS\bin\Release\netcoreapp2.0\cosmos\ComobiOS.deps.json
+C:\Softs\ComobiOS\bin\Release\netcoreapp2.0\cosmos\ComobiOS.dll
+C:\Softs\ComobiOS\bin\Release\netcoreapp2.0\cosmos\ComobiOS.pdb
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.csproj.AssemblyReference.cache
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.AssemblyInfoInputs.cache
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.AssemblyInfo.cs
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.csproj.CoreCompileInputs.cache
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.dll
+C:\Softs\ComobiOS\obj\Release\netcoreapp2.0\cosmos\ComobiOS.pdb
