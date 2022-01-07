@@ -1,26 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "KAJ7SFE0x56rEdRrc+lT8p7qZ/KHscu1YmHFOvbelJ34t2PfxAvc8rWwNcC2ANjjHH9MGazZaD0VV+88esW/kw==",
+  "dgSpecHash": "XcClerD3LUzCBFlNzc18wYrbEJ/gPXxeLbi16Jt+4ZKXgT8Lo1GGATNuIgWY5KG/jx8/y0OqAvhSSSTzxSEQSg==",
   "success": true,
   "projectFilePath": "C:\\Softs\\ComobiOS\\ComobiOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\79333\\.nuget\\packages\\cosmos.build\\0.1.0-localbuild20200708061311\\cosmos.build.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\cosmos.common\\0.1.0-localbuild20200708061311\\cosmos.common.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\cosmos.core\\0.1.0-localbuild20200708061311\\cosmos.core.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\cosmos.debug.kernel\\0.1.0-localbuild20200708061311\\cosmos.debug.kernel.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\cosmos.hal2\\0.1.0-localbuild20200708061311\\cosmos.hal2.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\cosmos.system2\\0.1.0-localbuild20200708061311\\cosmos.system2.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\il2cpu.api\\0.1.0-localbuild20200708061311\\il2cpu.api.0.1.0-localbuild20200708061311.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\microsoft.netcore.app\\2.0.9\\microsoft.netcore.app.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.9\\microsoft.netcore.dotnetapphost.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.0.9\\microsoft.netcore.dotnethostpolicy.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.0.9\\microsoft.netcore.dotnethostresolver.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.2\\microsoft.netcore.platforms.2.0.2.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\runtime.win-x86.microsoft.netcore.app\\2.0.9\\runtime.win-x86.microsoft.netcore.app.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\runtime.win-x86.microsoft.netcore.dotnetapphost\\2.0.9\\runtime.win-x86.microsoft.netcore.dotnetapphost.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\runtime.win-x86.microsoft.netcore.dotnethostpolicy\\2.0.9\\runtime.win-x86.microsoft.netcore.dotnethostpolicy.2.0.9.nupkg.sha512",
-    "C:\\Users\\79333\\.nuget\\packages\\runtime.win-x86.microsoft.netcore.dotnethostresolver\\2.0.9\\runtime.win-x86.microsoft.netcore.dotnethostresolver.2.0.9.nupkg.sha512"
+    "C:\\Users\\79333\\.nuget\\packages\\cosmos.build\\0.1.0-localbuild20220107021542\\cosmos.build.0.1.0-localbuild20220107021542.nupkg.sha512",
+    "C:\\Users\\79333\\.nuget\\packages\\cosmos.common\\0.1.0-localbuild20220107021611\\cosmos.common.0.1.0-localbuild20220107021611.nupkg.sha512",
+    "C:\\Users\\79333\\.nuget\\packages\\cosmos.core\\0.1.0-localbuild20220107021611\\cosmos.core.0.1.0-localbuild20220107021611.nupkg.sha512",
+    "C:\\Users\\79333\\.nuget\\packages\\cosmos.debug.kernel\\0.1.0-localbuild20220107021611\\cosmos.debug.kernel.0.1.0-localbuild20220107021611.nupkg.sha512",
+    "C:\\Users\\79333\\.nuget\\packages\\cosmos.hal2\\0.1.0-localbuild20220107021611\\cosmos.hal2.0.1.0-localbuild20220107021611.nupkg.sha512",
+    "C:\\Users\\79333\\.nuget\\packages\\cosmos.system2\\0.1.0-localbuild20220107021611\\cosmos.system2.0.1.0-localbuild20220107021611.nupkg.sha512",
+    "C:\\Users\\79333\\.nuget\\packages\\il2cpu.api\\0.1.0-localbuild20220107021611\\il2cpu.api.0.1.0-localbuild20220107021611.nupkg.sha512"
   ],
   "logs": []
 }

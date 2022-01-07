@@ -18,7 +18,7 @@ namespace ComobiOS
             Console.Beep();
             Console.Beep();
             Console.Beep();
-            main = new Shell();
+            main = new();
             main.Home();
         }
 

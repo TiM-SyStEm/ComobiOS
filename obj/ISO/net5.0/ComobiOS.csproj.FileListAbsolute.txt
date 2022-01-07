@@ -1,0 +1,12 @@
+C:\Users\79333\Downloads\ComobiOS\bin\ISO\net5.0\ComobiOS.deps.json
+C:\Users\79333\Downloads\ComobiOS\bin\ISO\net5.0\ComobiOS.dll
+C:\Users\79333\Downloads\ComobiOS\bin\ISO\net5.0\ref\ComobiOS.dll
+C:\Users\79333\Downloads\ComobiOS\bin\ISO\net5.0\ComobiOS.pdb
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.csproj.AssemblyReference.cache
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.AssemblyInfoInputs.cache
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.AssemblyInfo.cs
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.csproj.CoreCompileInputs.cache
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.dll
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ref\ComobiOS.dll
+C:\Users\79333\Downloads\ComobiOS\obj\ISO\net5.0\ComobiOS.pdb
