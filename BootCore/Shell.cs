@@ -1,6 +1,5 @@
 ﻿using Cosmos.System.Graphics;
 using System;
-using static Cosmos.HAL.PCIDevice;
 using static Cosmos.HAL.VGADriver;
 using Date = Cosmos.HAL.RTC;
 using Sys = Cosmos.System;
@@ -9,6 +8,7 @@ namespace ComobiOS.BootCore
 {
     class Shell
     {
+        protected static Memory memory = new();
         public Shell()
         {
 
@@ -77,10 +77,10 @@ namespace ComobiOS.BootCore
                 case "info":
                     IOsteram.Out("========================");
                     IOsteram.Out("Comobi version: " + Kernel.version);
-                    IOsteram.Out("RuntimeAPI version: " + "0.0");
+                    IOsteram.Out("RuntimeAPI version: " + runtime.RuntimeAPI.version);
                     IOsteram.Out("Amount of RAM: " + Cosmos.Core.CPU.GetAmountOfRAM());
-                    IOsteram.Out("Free RAM: ");
-                    IOsteram.Out("CPU vendor: " + Cosmos.Core.CPU.GetCPUVendorName());
+                    IOsteram.Out("Free RAM: " + memory.FreeMemory);
+                    IOsteram.Out("CPU name: " + Cosmos.Core.CPU.GetCPUBrandString());
                     IOsteram.Out("========================");
                     break;
                 case "home":
@@ -90,12 +90,40 @@ namespace ComobiOS.BootCore
                     break;
                 case "out":
                     string[] text = comm.Split("\"");
-                    IOsteram.Out(text[3]);
+                    IOsteram.Out(text[1]);
                     break;
                 case "dt":
                     IOsteram.Out("===================");
-                    IOsteram.Out(Date.DayOfTheMonth + "." + Date.Month + ".20" + Date.Year + " " + Date.Hour + ":" + Date.Minute);
+                    IOsteram.Out(DateTime.STDview());
                     IOsteram.Out("===================");
+                    break;
+                case "note":
+                    native.Note.Notepad();
+                    break;
+                case "mkfile":
+                    FileSystem.CreateFile(objects[1]);
+                    break;
+                case "exfile":
+                    if (FileSystem.ExistsFile(objects[1]))
+                        IOsteram.Out("File exists", ConsoleColor.Green);
+                    else IOsteram.Out("File not exists", ConsoleColor.Red);
+                    break;
+                case "exdir":
+                    if (FileSystem.ExistsDir(objects[1]))
+                        IOsteram.Out("Dir exists", ConsoleColor.Green);
+                    else IOsteram.Out("Dir not exists", ConsoleColor.Red);
+                    break;
+                case "mkdir":
+                    FileSystem.CreateDir(objects[1]);
+                    break;
+                case "rmfile":
+                    FileSystem.DeleteFile(objects[1]);
+                    break;
+                case "rmdir":
+                    FileSystem.DeleteDir(objects[1]);
+                    break;
+                default:
+                    IOsteram.Out("Error in cmd [COMMAND NOT FOUND]", ConsoleColor.Red);
                     break;
             }
         }
