@@ -1,8 +1,9 @@
 ﻿using Cosmos.System.Graphics;
 using System;
+using System.Drawing;
+using Sys = Cosmos.System;
 using static Cosmos.HAL.VGADriver;
 using Date = Cosmos.HAL.RTC;
-using Sys = Cosmos.System;
 
 namespace ComobiOS.BootCore
 {
@@ -72,14 +73,27 @@ namespace ComobiOS.BootCore
                                 Console.BackgroundColor = ConsoleColor.Magenta;
                             Kernel.rst = true;
                             break;
+                        case "colDepth":
+                            if (objects[2] == "4")
+                                OpenCG.CG.ColorDepth = Sys.Graphics.ColorDepth.ColorDepth4;
+                            else if (objects[2] == "8")
+                                OpenCG.CG.ColorDepth = Sys.Graphics.ColorDepth.ColorDepth8;
+                            else if (objects[2] == "16")
+                                OpenCG.CG.ColorDepth = Sys.Graphics.ColorDepth.ColorDepth16;
+                            else if (objects[2] == "24")
+                                OpenCG.CG.ColorDepth = Sys.Graphics.ColorDepth.ColorDepth24;
+                            else if (objects[2] == "32")
+                                OpenCG.CG.ColorDepth = Sys.Graphics.ColorDepth.ColorDepth32;
+                            break;
                     }
                     break;
                 case "info":
                     IOsteram.Out("========================");
                     IOsteram.Out("Comobi version: " + Kernel.version);
                     IOsteram.Out("RuntimeAPI version: " + runtime.RuntimeAPI.version);
-                    IOsteram.Out("Amount of RAM: " + Cosmos.Core.CPU.GetAmountOfRAM());
-                    IOsteram.Out("Free RAM: " + memory.FreeMemory);
+                    IOsteram.Out("OpenCG version: " + OpenCG.CG.version);
+                    IOsteram.Out("Amount of RAM: " + Cosmos.Core.CPU.GetAmountOfRAM() + " MB");
+                    IOsteram.Out("Free RAM: " + memory.FreeMemory + " MB");
                     IOsteram.Out("CPU name: " + Cosmos.Core.CPU.GetCPUBrandString());
                     IOsteram.Out("========================");
                     break;
@@ -97,9 +111,6 @@ namespace ComobiOS.BootCore
                     IOsteram.Out(DateTime.STDview());
                     IOsteram.Out("===================");
                     break;
-                case "note":
-                    native.Note.Notepad();
-                    break;
                 case "mkfile":
                     FileSystem.CreateFile(objects[1]);
                     break;
@@ -107,6 +118,12 @@ namespace ComobiOS.BootCore
                     if (FileSystem.ExistsFile(objects[1]))
                         IOsteram.Out("File exists", ConsoleColor.Green);
                     else IOsteram.Out("File not exists", ConsoleColor.Red);
+                    break;
+                case "core":
+                    if (objects[1] == "author")
+                    {
+                        IOsteram.Out("Timofei Gorlov", ConsoleColor.Green);
+                    }
                     break;
                 case "exdir":
                     if (FileSystem.ExistsDir(objects[1]))
@@ -121,6 +138,29 @@ namespace ComobiOS.BootCore
                     break;
                 case "rmdir":
                     FileSystem.DeleteDir(objects[1]);
+                    break;
+                case "clip":
+                    if (objects[1] == "-c")
+                    {
+                        text = comm.Split("\"");
+                        ClipBoard.Data = text[1];
+                    }
+                    else if (objects[1] == "-v")
+                    {
+                        IOsteram.Out(ClipBoard.Data);
+                    }
+                    break;
+                case "test":
+                    // test OpenCG
+                    OpenCG.CG.Init();
+                    OpenCG.CG.Clear(Color.Blue);
+                    OpenCG.CG.Simple.drawRect(70, 70, 300, 300, Color.White);
+                    OpenCG.CG.Simple.drawString("TEXT", 90, 90, Color.White);
+                    break;
+                case "ls":
+                    FileSystem.Listing();
+                    break;
+                case "calc":
                     break;
                 default:
                     IOsteram.Out("Error in cmd [COMMAND NOT FOUND]", ConsoleColor.Red);

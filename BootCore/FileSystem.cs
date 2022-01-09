@@ -2,6 +2,7 @@
 using FS = Cosmos.System.FileSystem;
 using System.IO;
 using Sys = Cosmos.System;
+using System.Linq;
 
 namespace ComobiOS.BootCore
 {
@@ -73,6 +74,22 @@ namespace ComobiOS.BootCore
             catch (Exception e)
             {
                 IOsteram.Out(string.Format("Error in delete dir [{0}]", e.ToString().ToUpper()), ConsoleColor.Red);
+            }
+        }
+        public static void Listing()
+        {
+            var directory_list = fs.GetDirectoryListing(cdisk);
+            foreach (var directoryEntry in directory_list)
+            {
+                if (directoryEntry.mEntryType == FS.Listing.DirectoryEntryTypeEnum.File) {
+                    string text = directoryEntry.mName + "\t" + "FILE" + "\t" + Units.Convert((int)directoryEntry.mSize, CompUnits.BITE);
+                    IOsteram.Out(text);
+                }
+                else
+                {
+                    string text = directoryEntry.mName + "\t" + "DIR" + "\t" + Units.Convert((int)directoryEntry.mSize, CompUnits.BITE);
+                    IOsteram.Out(text);
+                }
             }
         }
     }
